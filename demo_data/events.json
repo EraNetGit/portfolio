@@ -1,0 +1,1674 @@
+[
+ {
+  "date": "2026-11-26",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-26",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-26",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-26",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-26",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-26",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-26",
+  "client_code": "DEMO007",
+  "client": "Gantry Print Co",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-26",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-26",
+  "client_code": "DEMO027",
+  "client": "Cobalt Data Rooms",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-25",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-25",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-25",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-25",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-25",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-25",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-25",
+  "client_code": "DEMO014",
+  "client": "Nettle & Co Florist",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-25",
+  "client_code": "DEMO019",
+  "client": "Saltbush Childcare",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-25",
+  "client_code": "DEMO008",
+  "client": "Harlow Physio",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-24",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-24",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-24",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-24",
+  "client_code": "DEMO003",
+  "client": "Corvus Logistics",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-24",
+  "client_code": "DEMO026",
+  "client": "Birchwood Law",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-24",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-23",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-23",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-23",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-23",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-23",
+  "client_code": "DEMO013",
+  "client": "Marlow Accounting",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-23",
+  "client_code": "DEMO019",
+  "client": "Saltbush Childcare",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-23",
+  "client_code": "DEMO012",
+  "client": "Lanternfish Bistro",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-22",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-22",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-22",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-22",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-22",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-22",
+  "client_code": "DEMO004",
+  "client": "Delmar Apartments",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-22",
+  "client_code": "DEMO027",
+  "client": "Cobalt Data Rooms",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-22",
+  "client_code": "DEMO024",
+  "client": "Yarrow Retirement Village",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-21",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-21",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-21",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-21",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-21",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-21",
+  "client_code": "DEMO007",
+  "client": "Gantry Print Co",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-21",
+  "client_code": "DEMO017",
+  "client": "Quarry Lane Gym",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-21",
+  "client_code": "DEMO002",
+  "client": "Bluegum Cafe",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-20",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-20",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-20",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-20",
+  "client_code": "DEMO017",
+  "client": "Quarry Lane Gym",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-20",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-20",
+  "client_code": "DEMO012",
+  "client": "Lanternfish Bistro",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-19",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-19",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-19",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-19",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-19",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-19",
+  "client_code": "DEMO008",
+  "client": "Harlow Physio",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-19",
+  "client_code": "DEMO027",
+  "client": "Cobalt Data Rooms",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-19",
+  "client_code": "DEMO019",
+  "client": "Saltbush Childcare",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-18",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-18",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-18",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-18",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-18",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-18",
+  "client_code": "DEMO017",
+  "client": "Quarry Lane Gym",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-18",
+  "client_code": "DEMO012",
+  "client": "Lanternfish Bistro",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-17",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-17",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-17",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-17",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-17",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-17",
+  "client_code": "DEMO005",
+  "client": "Eastfield Veterinary",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-17",
+  "client_code": "DEMO028",
+  "client": "Driftwood Motel",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-16",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-16",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-16",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-16",
+  "client_code": "DEMO008",
+  "client": "Harlow Physio",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-16",
+  "client_code": "DEMO006",
+  "client": "Fernbank Primary",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-15",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-15",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-15",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-15",
+  "client_code": "DEMO010",
+  "client": "Juniper Hair Studio",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-15",
+  "client_code": "DEMO019",
+  "client": "Saltbush Childcare",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-15",
+  "client_code": "DEMO024",
+  "client": "Yarrow Retirement Village",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-14",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-14",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-14",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-14",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-14",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-14",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-14",
+  "client_code": "DEMO002",
+  "client": "Bluegum Cafe",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-14",
+  "client_code": "DEMO009",
+  "client": "Ironbark Storage",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-14",
+  "client_code": "DEMO017",
+  "client": "Quarry Lane Gym",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-13",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-13",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-13",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-13",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-13",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-13",
+  "client_code": "DEMO014",
+  "client": "Nettle & Co Florist",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-13",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-13",
+  "client_code": "DEMO009",
+  "client": "Ironbark Storage",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-12",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-12",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-12",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-12",
+  "client_code": "DEMO017",
+  "client": "Quarry Lane Gym",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-12",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-12",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-11",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-11",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-11",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-11",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-11",
+  "client_code": "DEMO012",
+  "client": "Lanternfish Bistro",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-11",
+  "client_code": "DEMO006",
+  "client": "Fernbank Primary",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-11",
+  "client_code": "DEMO026",
+  "client": "Birchwood Law",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-10",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-10",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-10",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-10",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-10",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-10",
+  "client_code": "DEMO019",
+  "client": "Saltbush Childcare",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-10",
+  "client_code": "DEMO030",
+  "client": "Foxglove Nursery",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-10",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-09",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-09",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-09",
+  "client_code": "DEMO023",
+  "client": "Wattle Street Medical",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-09",
+  "client_code": "DEMO006",
+  "client": "Fernbank Primary",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-08",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-08",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-08",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-08",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-08",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-08",
+  "client_code": "DEMO007",
+  "client": "Gantry Print Co",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-08",
+  "client_code": "DEMO005",
+  "client": "Eastfield Veterinary",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-08",
+  "client_code": "DEMO004",
+  "client": "Delmar Apartments",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-07",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-07",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-07",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-07",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-07",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-07",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-07",
+  "client_code": "DEMO001",
+  "client": "Ashgrove Dental",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-07",
+  "client_code": "DEMO004",
+  "client": "Delmar Apartments",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-07",
+  "client_code": "DEMO025",
+  "client": "Zephyr Cycles",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-06",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-06",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-06",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-06",
+  "client_code": "DEMO026",
+  "client": "Birchwood Law",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-06",
+  "client_code": "DEMO030",
+  "client": "Foxglove Nursery",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-06",
+  "client_code": "DEMO010",
+  "client": "Juniper Hair Studio",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-05",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-05",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-05",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-05",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-05",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-05",
+  "client_code": "DEMO001",
+  "client": "Ashgrove Dental",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-05",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-05",
+  "client_code": "DEMO007",
+  "client": "Gantry Print Co",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-04",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-04",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-04",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-04",
+  "client_code": "DEMO004",
+  "client": "Delmar Apartments",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-04",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-04",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-03",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-03",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-03",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-03",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-03",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-03",
+  "client_code": "DEMO003",
+  "client": "Corvus Logistics",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-03",
+  "client_code": "DEMO028",
+  "client": "Driftwood Motel",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-02",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-02",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-02",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-02",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-02",
+  "client_code": "DEMO014",
+  "client": "Nettle & Co Florist",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-02",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-02",
+  "client_code": "DEMO002",
+  "client": "Bluegum Cafe",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-01",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-01",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-01",
+  "client_code": "DEMO016",
+  "client": "Pelican Marine Supplies",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-11-01",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-01",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-01",
+  "client_code": "DEMO018",
+  "client": "Redwater Pharmacy",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-01",
+  "client_code": "DEMO005",
+  "client": "Eastfield Veterinary",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-11-01",
+  "client_code": "DEMO006",
+  "client": "Fernbank Primary",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-11-01",
+  "client_code": "DEMO025",
+  "client": "Zephyr Cycles",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-10-31",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-31",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-10-31",
+  "client_code": "DEMO027",
+  "client": "Cobalt Data Rooms",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-10-31",
+  "client_code": "DEMO025",
+  "client": "Zephyr Cycles",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-10-31",
+  "client_code": "DEMO013",
+  "client": "Marlow Accounting",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-10-30",
+  "client_code": "DEMO021",
+  "client": "Umber Architects",
+  "event": "Alarm Repeated Loss of Polling",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-10-30",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "No Signals Received from Client",
+  "report": "Delinquency",
+  "severity": 3
+ },
+ {
+  "date": "2026-10-30",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "TICKET FOR DEALER",
+  "report": "Incident",
+  "severity": 1
+ },
+ {
+  "date": "2026-10-30",
+  "client_code": "DEMO019",
+  "client": "Saltbush Childcare",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-10-30",
+  "client_code": "DEMO001",
+  "client": "Ashgrove Dental",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-10-30",
+  "client_code": "DEMO008",
+  "client": "Harlow Physio",
+  "event": "Battery Test Failure",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-29",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-29",
+  "client_code": "DEMO020",
+  "client": "Tallow Bakery",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-29",
+  "client_code": "DEMO022",
+  "client": "Vesper Wine Bar",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-29",
+  "client_code": "DEMO004",
+  "client": "Delmar Apartments",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-29",
+  "client_code": "DEMO028",
+  "client": "Driftwood Motel",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-28",
+  "client_code": "DEMO029",
+  "client": "Emberly Bookshop",
+  "event": "Sensor Battery Low",
+  "report": "Alarm Events",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-28",
+  "client_code": "DEMO011",
+  "client": "Kelvin Auto Group",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-28",
+  "client_code": "DEMO017",
+  "client": "Quarry Lane Gym",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ },
+ {
+  "date": "2026-10-28",
+  "client_code": "DEMO013",
+  "client": "Marlow Accounting",
+  "event": "Panel Serial Connection Issue",
+  "report": "System Trouble",
+  "severity": 2
+ },
+ {
+  "date": "2026-10-28",
+  "client_code": "DEMO006",
+  "client": "Fernbank Primary",
+  "event": "Zone Isolate",
+  "report": "Alarm Events",
+  "severity": 1
+ }
+]

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site Health (demo)</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --surface-0:#f6f6f6; --surface-1:#ffffff; --line:#e4e4e4;
+    --text-primary:#191919; --text-secondary:#666666;
+    --blue:#257de0; --visit:#c62828; --watch:#b86e00; --ok:#008a17;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --surface-0:#111; --surface-1:#191919; --line:#2e2e2e; --text-primary:#efefef; --text-secondary:#9c9c9c;
+            --blue:#338ced; --visit:#eb6263; --watch:#f2a600; --ok:#0aac23; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--surface-0); color:var(--text-primary); }
+  header { display:flex; justify-content:space-between; align-items:baseline; padding:20px 28px 8px; flex-wrap:wrap; gap:8px; }
+  h1 { font-size:20px; margin:0; font-weight:600; }
+  .sub { color:var(--text-secondary); font-size:13px; }
+  .badge { background:var(--surface-1); border:1px solid var(--line); border-radius:99px; padding:3px 10px; font-size:12px; color:var(--text-secondary); }
+  main { padding:8px 28px 40px; max-width:900px; margin:auto; display:grid; gap:14px; }
+  .toolbar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .chip { border:1px solid var(--line); background:var(--surface-1); color:var(--text-primary); border-radius:99px; padding:5px 12px; cursor:pointer; font:inherit; font-size:13px; }
+  .chip[aria-pressed="true"] { background:var(--blue); border-color:var(--blue); color:#fff; }
+  .progress { margin-left:auto; color:var(--text-secondary); font-size:13px; }
+  .card { background:var(--surface-1); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:10px; padding:16px 18px; display:grid; gap:10px; }
+  .card.visit { border-left-color:var(--visit); }
+  .card.watch { border-left-color:var(--watch); }
+  .card.done { opacity:.45; }
+  .top { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+  .name { font-weight:600; font-size:16px; }
+  .meta { color:var(--text-secondary); font-size:12px; }
+  .tag { font-size:12px; font-weight:600; }
+  .tag.visit { color:var(--visit); } .tag.visit::before { content:"\25B2 "; }
+  .tag.watch { color:var(--watch); } .tag.watch::before { content:"\25CF "; }
+  .why { font-size:13px; }
+  .spark { display:flex; align-items:flex-end; gap:3px; height:34px; }
+  .spark i { flex:1; background:var(--blue); border-radius:3px 3px 0 0; min-height:2px; opacity:.9; }
+  .spark i.zero { background:var(--line); }
+  .spark-l { display:flex; justify-content:space-between; font-size:11px; color:var(--text-secondary); }
+  .rows { font-size:12px; color:var(--text-secondary); }
+  .rows b { color:var(--text-primary); font-weight:500; }
+  .actions { display:flex; gap:8px; }
+  button.act { font:inherit; font-size:13px; border:1px solid var(--line); background:var(--surface-1); color:var(--text-primary); padding:6px 12px; border-radius:6px; cursor:pointer; }
+  button.act.primary { background:var(--blue); border-color:var(--blue); color:#fff; }
+  button.act:hover { filter:brightness(1.08); }
+  .empty { text-align:center; color:var(--text-secondary); padding:30px; }
+  footer { text-align:center; color:var(--text-secondary); font-size:12px; padding:0 0 28px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Site Health</h1>
+    <div class="sub">Kestrel Bay Systems (fictional) &middot; synthetic demo data &middot; last <span id="win"></span> days to <span id="asof"></span></div>
+  </div>
+  <span class="badge">Demo build &mdash; no live connection</span>
+</header>
+<main>
+  <div class="toolbar" id="toolbar">
+    <button class="chip" data-f="all" aria-pressed="true">All</button>
+    <button class="chip" data-f="visit" aria-pressed="false">Recommend visit</button>
+    <button class="chip" data-f="watch" aria-pressed="false">Keep watching</button>
+    <span class="progress" id="progress"></span>
+  </div>
+  <div id="queue"></div>
+</main>
+<footer>Sample data is generated and entirely fictional. Source: data/demo_monitoring_master.xlsx</footer>
+<script>
+const $ = id => document.getElementById(id);
+let data, filter = "all", reviewed = new Set();
+
+function render() {
+  const list = data.cards.filter(c => filter === "all" || c.level === filter);
+  const total = data.cards.length;
+  $("progress").textContent = `${reviewed.size} of ${total} reviewed`;
+  $("queue").innerHTML = list.length ? "" : '<div class="empty">Nothing in this view.</div>';
+  list.forEach(c => {
+    const max = Math.max(...c.spark, 1);
+    const done = reviewed.has(c.code);
+    const el = document.createElement("div");
+    el.className = `card ${c.level} ${done ? "done" : ""}`;
+    el.innerHTML = `
+      <div class="top">
+        <div><div class="name">${c.client}</div><div class="meta">${c.code} &middot; ${c.address} &middot; ${c.provider}</div></div>
+        <div class="tag ${c.level}">${c.action}</div>
+      </div>
+      <div class="why">Flagged on <b>${c.days_flagged}</b> of the last ${data.window} days &mdash; most often <b>${c.top_event}</b> (${c.top_event_n}&times;).</div>
+      <div>
+        <div class="spark" role="img" aria-label="Events per day">${c.spark.map((n,i) =>
+          `<i class="${n ? "" : "zero"}" style="height:${n ? 8 + n/max*92 : 6}%" title="${data.day_labels[i]}: ${n} event${n===1?"":"s"}"></i>`).join("")}</div>
+        <div class="spark-l"><span>${data.day_labels[0]}</span><span>${data.day_labels[data.day_labels.length-1]}</span></div>
+      </div>
+      <div class="rows">${c.breakdown.map(b => `<b>${b.n}&times;</b> ${b.event}`).join(" &nbsp;&middot;&nbsp; ")}</div>
+      <div class="actions">
+        <button class="act primary" data-a="task">${done ? "Reviewed" : "Raise task"}</button>
+        <button class="act" data-a="dismiss">${done ? "Undo" : "Dismiss"}</button>
+      </div>`;
+    el.querySelectorAll("button.act").forEach(b => b.onclick = () => {
+      if (b.dataset.a === "dismiss" && done) reviewed.delete(c.code); else reviewed.add(c.code);
+      render();
+    });
+    $("queue").appendChild(el);
+  });
+}
+document.querySelectorAll(".chip").forEach(b => b.onclick = () => {
+  filter = b.dataset.f;
+  document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render();
+});
+fetch("/api/queue").then(r => r.json()).then(d => {
+  data = d; $("asof").textContent = d.as_of; $("win").textContent = d.window; render();
+});
+</script>
+</body>
+</html>

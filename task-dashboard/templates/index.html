@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workflow Task Dashboard (demo)</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --surface-0:#f6f6f6; --surface-1:#ffffff; --line:#e4e4e4;
+    --text-primary:#191919; --text-secondary:#666666;
+    --blue:#257de0; --blue-100:#cce3fd; --blue-250:#84b9f3; --blue-400:#338ced; --blue-550:#1b64be; --blue-700:#0e3d7e;
+    --warn:#b86e00; --bad:#c62828;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --surface-0:#111; --surface-1:#191919; --line:#2e2e2e; --text-primary:#efefef; --text-secondary:#9c9c9c;
+            --blue:#338ced; --warn:#f2a600; --bad:#eb6263; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--surface-0); color:var(--text-primary); }
+  header { display:flex; justify-content:space-between; align-items:baseline; padding:20px 28px 8px; flex-wrap:wrap; gap:8px; }
+  h1 { font-size:20px; margin:0; font-weight:600; }
+  .sub { color:var(--text-secondary); font-size:13px; }
+  .badge { background:var(--surface-1); border:1px solid var(--line); border-radius:99px; padding:3px 10px; font-size:12px; color:var(--text-secondary); }
+  main { padding:8px 28px 40px; display:grid; gap:16px; max-width:1200px; margin:auto; }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; }
+  .card { background:var(--surface-1); border:1px solid var(--line); border-radius:10px; padding:16px 18px; }
+  .kpi .v { font-size:30px; font-weight:600; line-height:1.1; }
+  .kpi .l { color:var(--text-secondary); font-size:12px; margin-top:4px; }
+  .kpi.alert .v::before { content:"\25B2  "; font-size:14px; color:var(--warn); vertical-align:middle; }
+  .grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:16px; }
+  h2 { font-size:14px; margin:0 0 12px; font-weight:600; }
+  .bar-row { display:grid; grid-template-columns:120px 1fr 32px; align-items:center; gap:10px; margin:6px 0; }
+  .bar-row .name { color:var(--text-secondary); font-size:13px; }
+  .bar-track { height:14px; }
+  .bar { height:100%; background:var(--blue); border-radius:0 4px 4px 0; min-width:2px; transition:filter .1s; }
+  .bar.done { background:var(--text-secondary); opacity:.55; }
+  .bar-row:hover .bar { filter:brightness(1.15); }
+  .bar-row .n { text-align:right; font-variant-numeric:tabular-nums; }
+  table { width:100%; border-collapse:collapse; }
+  th,td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); font-size:13px; }
+  th { color:var(--text-secondary); font-weight:500; font-size:12px; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .heat { table-layout:fixed; }
+  .heat th:first-child, .heat td.label { width:150px; }
+  .heat td { text-align:center; padding:0; border:2px solid var(--surface-1); height:34px; }
+  .heat td.label { text-align:left; padding:0 8px; border:0; color:var(--text-secondary); font-size:13px; }
+  .heat th { text-align:center; }
+  .age-hot { color:var(--bad); font-weight:600; }
+  .age-hot::before { content:"\25B2 "; font-size:10px; }
+  #tip { position:fixed; pointer-events:none; background:var(--surface-1); border:1px solid var(--line); border-radius:6px; padding:6px 9px; font-size:12px; box-shadow:0 2px 8px rgba(0,0,0,.18); display:none; z-index:5; }
+  footer { text-align:center; color:var(--text-secondary); font-size:12px; padding:0 0 28px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Workflow Task Dashboard</h1>
+    <div class="sub">Kestrel Bay Systems (fictional) &middot; synthetic demo data &middot; as of <span id="asof"></span></div>
+  </div>
+  <span class="badge">Demo build &mdash; no live connection</span>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+  <section class="grid2">
+    <div class="card"><h2>Pipeline by status</h2><div id="pipeline"></div></div>
+    <div class="card"><h2>Open tasks by technician</h2><div id="workload"></div></div>
+  </section>
+  <section class="card">
+    <h2>Status vs. time since last update (open tasks)</h2>
+    <table class="heat" id="heat"></table>
+  </section>
+  <section class="card">
+    <h2>Needs a nudge &mdash; open and untouched for more than <span id="sd"></span> days</h2>
+    <table id="stale"></table>
+  </section>
+</main>
+<footer>Sample data is generated and entirely fictional. Source: data/demo_tasks.xlsx</footer>
+<div id="tip"></div>
+<script>
+const $ = id => document.getElementById(id);
+const tip = $("tip");
+function tipOn(el, html) {
+  el.addEventListener("mousemove", e => { tip.style.display="block"; tip.innerHTML=html;
+    tip.style.left=(e.clientX+14)+"px"; tip.style.top=(e.clientY+14)+"px"; });
+  el.addEventListener("mouseleave", () => tip.style.display="none");
+}
+function bars(target, rows, key, label) {
+  const max = Math.max(...rows.map(r => r.count), 1);
+  rows.forEach(r => {
+    const d = document.createElement("div"); d.className = "bar-row";
+    d.innerHTML = `<span class="name">${r[key]}</span><div class="bar-track"><div class="bar ${r[key]==="Completed"?"done":""}" style="width:${r.count/max*100}%"></div></div><span class="n">${r.count}</span>`;
+    tipOn(d, `<b>${r[key]}</b><br>${r.count} ${label}`);
+    target.appendChild(d);
+  });
+}
+fetch("/api/summary").then(r => r.json()).then(s => {
+  $("asof").textContent = s.as_of; $("sd").textContent = s.stale_days;
+  const k = s.kpi;
+  $("kpis").innerHTML = [
+    ["Open tasks", k.open, ""], ["Untouched > "+s.stale_days+" days", k.stale, "alert"],
+    ["Waiting on parts / client", k.awaiting, ""], ["Completed", k.completed, ""]
+  ].map(([l,v,c]) => `<div class="card kpi ${c}"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+  bars($("pipeline"), s.pipeline, "status", "tasks");
+  bars($("workload"), s.workload.map(w => ({...w, status:w.tech})), "status", "open tasks");
+
+  const ramp = ["#cce3fd","#9dc8f7","#6aabf1","#338ced","#1b64be","#0e3d7e"];
+  const max = Math.max(...s.heatmap.rows.flatMap(r => r.cells), 1);
+  const h = $("heat");
+  h.innerHTML = "<tr><th></th>" + s.heatmap.buckets.map(b => `<th>${b}</th>`).join("") + "</tr>";
+  s.heatmap.rows.forEach(r => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td class="label">${r.status}</td>` + r.cells.map((c,i) => {
+      const step = c === 0 ? -1 : Math.min(ramp.length-1, Math.floor(c/max*(ramp.length-1)));
+      const bg = c === 0 ? "transparent" : ramp[step];
+      const fg = step >= 3 ? "#fff" : "#191919";
+      return `<td data-c="${c}" data-b="${s.heatmap.buckets[i]}" style="background:${bg};color:${fg}">${c || ""}</td>`;
+    }).join("");
+    tr.querySelectorAll("td[data-c]").forEach(td => tipOn(td, `<b>${r.status}</b><br>${td.dataset.c} tasks, last updated ${td.dataset.b} ago`));
+    h.appendChild(tr);
+  });
+
+  $("stale").innerHTML = "<tr><th>Task</th><th>Client</th><th>Job</th><th>Status</th><th>Tech</th><th class='num'>Days idle</th></tr>" +
+    s.stale.map(t => `<tr><td>${t.id}</td><td>${t.client}</td><td>${t.title}</td><td>${t.status}</td><td>${t.tech}</td><td class="num age-hot">${t.age}</td></tr>`).join("");
+});
+</script>
+</body>
+</html>

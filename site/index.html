@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[YOUR NAME] — Operations tooling &amp; automation</title>
+<meta name="description" content="Portfolio of internal tools and dashboards built to turn messy operational data into clear daily actions.">
+<style>
+  :root { color-scheme: light dark;
+    --bg:#fafafa; --surface:#fff; --line:#e4e4e4; --text:#191919; --muted:#666; --accent:#257de0; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111; --surface:#191919; --line:#2e2e2e; --text:#efefef; --muted:#9c9c9c; --accent:#338ced; } }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); }
+  a { color:var(--accent); }
+  .wrap { max-width:960px; margin:auto; padding:0 24px; }
+  nav { display:flex; justify-content:space-between; padding:20px 0; font-size:14px; }
+  nav a { text-decoration:none; margin-left:18px; color:var(--muted); }
+  nav a:first-child { margin:0; color:var(--text); font-weight:600; }
+  .hero { padding:56px 0 40px; }
+  .hero h1 { font-size:clamp(30px,5vw,46px); line-height:1.15; margin:0 0 16px; letter-spacing:-.02em; }
+  .hero p { font-size:18px; color:var(--muted); max-width:640px; margin:0 0 24px; }
+  .btn { display:inline-block; padding:10px 18px; border-radius:8px; background:var(--accent); color:#fff; text-decoration:none; font-size:15px; margin-right:10px; }
+  .btn.ghost { background:transparent; color:var(--text); border:1px solid var(--line); }
+  h2 { font-size:24px; margin:56px 0 8px; letter-spacing:-.01em; }
+  .lead { color:var(--muted); margin:0 0 24px; }
+  .project { background:var(--surface); border:1px solid var(--line); border-radius:14px; overflow:hidden; margin:0 0 32px; }
+  .project img { display:block; width:100%; border-bottom:1px solid var(--line); }
+  .body { padding:24px 28px 28px; }
+  .body h3 { margin:0 0 6px; font-size:21px; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:0; list-style:none; }
+  .tags li { font-size:12px; border:1px solid var(--line); border-radius:99px; padding:2px 10px; color:var(--muted); }
+  dl { display:grid; grid-template-columns:110px 1fr; gap:8px 16px; margin:16px 0; }
+  dt { font-weight:600; font-size:14px; color:var(--muted); }
+  dd { margin:0; }
+  pre { background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:12px 14px; overflow:auto; font-size:13px; }
+  .note { background:var(--surface); border:1px dashed var(--line); border-radius:12px; padding:18px 22px; color:var(--muted); font-size:14px; }
+  footer { padding:48px 0 56px; color:var(--muted); font-size:13px; }
+  @media (max-width:560px) { dl { grid-template-columns:1fr; } dt { margin-top:6px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="#top">[YOUR NAME]</a><span><a href="#work">Work</a><a href="#approach">Approach</a><a href="#contact">Contact</a></span></nav>
+
+  <header class="hero" id="top">
+    <h1>I turn messy operational data into clear daily actions.</h1>
+    <p>Internal dashboards and automation for service and operations teams: less spreadsheet shuffling, fewer things falling through the cracks. Everything below runs on sample data and can be tried locally.</p>
+    <a class="btn" href="#work">See the work</a><a class="btn ghost" href="#contact">Get in touch</a>
+  </header>
+
+  <h2 id="work">Selected work</h2>
+  <p class="lead">Both demos use a fictional company (&ldquo;Kestrel Bay Systems&rdquo;) and generated data. No client information is involved.</p>
+
+  <article class="project">
+    <img src="img/task-dashboard.png" alt="Workflow Task Dashboard showing pipeline by status, technician workload, a status-versus-age heatmap and a list of stale tasks" loading="lazy">
+    <div class="body">
+      <h3>Workflow Task Dashboard</h3>
+      <ul class="tags"><li>Python</li><li>Flask</li><li>openpyxl</li><li>Vanilla JS</li></ul>
+      <dl>
+        <dt>Problem</dt><dd>Open jobs in a field-service system were spread across status views, so stalled work and uneven technician loads only showed up when someone complained.</dd>
+        <dt>What I built</dt><dd>A single-page dashboard showing the pipeline by status, open work per technician, and a status-versus-time-since-update heatmap. A short list of tasks untouched for over a week tells the coordinator who to chase.</dd>
+        <dt>Design choices</dt><dd>One accent colour for magnitude, a warning marker only where action is needed, and hover details on every bar and cell. It follows the system light/dark theme.</dd>
+        <dt>Data</dt><dd>Reads a spreadsheet export (the original also had a live API source). The demo ships with generated sample data.</dd>
+      </dl>
+      <a class="btn" href="#">Source on GitHub</a><a class="btn ghost" href="#run">Run it locally</a>
+    </div>
+  </article>
+
+  <article class="project">
+    <img src="img/site-health.png" alt="Site Health queue of flagged sites with a 14-day activity strip, recommended action and a Raise task button" loading="lazy">
+    <div class="body">
+      <h3>Site Health</h3>
+      <ul class="tags"><li>Python</li><li>Flask</li><li>openpyxl</li><li>Vanilla JS</li></ul>
+      <dl>
+        <dt>Problem</dt><dd>Daily monitoring reports arrive as separate files. Spotting a site that keeps faulting meant scanning many tabs by hand and remembering what had been seen before.</dd>
+        <dt>What I built</dt><dd>A ranked queue of sites that need attention. Each card shows how many of the last 14 days a site was flagged, what keeps recurring, and a plain recommendation: tech visit, keep watching, or nothing.</dd>
+        <dt>Design choices</dt><dd>A card queue replaced a dense table: one site at a time, with a clear next step and a visible &ldquo;reviewed&rdquo; count so the daily pass has an end.</dd>
+        <dt>Data</dt><dd>Reads a master workbook with one tab per report type. Recurrence rules (days flagged, severity) are plain constants at the top of <code>app.py</code>.</dd>
+      </dl>
+      <a class="btn" href="#">Source on GitHub</a><a class="btn ghost" href="#run">Run it locally</a>
+    </div>
+  </article>
+
+  <div class="note">More projects coming. Each one gets the same treatment: synthetic data, a one-click local demo, and a short write-up of the problem it solved.</div>
+
+  <h2 id="run">Run a demo locally</h2>
+  <p class="lead">Python 3.10+ on Windows, macOS or Linux.</p>
+  <pre>git clone https://github.com/[YOUR-GITHUB]/[REPO].git
+cd [REPO]/task-dashboard
+pip install -r requirements.txt
+python app.py        # http://127.0.0.1:5001
+
+# or on Windows: double-click run.bat</pre>
+  <p>To try your own data, set <code>DEMO_XLSX</code> to a spreadsheet with the same columns as the sample file in <code>data/</code>.</p>
+
+  <h2 id="approach">How I work</h2>
+  <p class="lead">Start from the daily question the person is trying to answer, then cut everything that doesn&rsquo;t help answer it. Prefer plain, readable code and spreadsheets people already use over heavy infrastructure. Keep real data out of anything shareable by designing demos around generated data from the start.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p class="lead">[YOUR EMAIL] &middot; <a href="#">LinkedIn</a> &middot; <a href="#">GitHub</a></p>
+
+  <footer>&copy; 2026 [YOUR NAME]. All demo data is synthetic. Company and people shown are fictional.</footer>
+</div>
+</body>
+</html>
